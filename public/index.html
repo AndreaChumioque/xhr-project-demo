@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>NY Times | Solcitudes Asíncronas</title>
+</head>
+
+<body>
+  <header class="container-fluid p-4">
+    <div class="row">
+      <div class="col col-sm-6 col-md-5">
+        <img class="img-fluid" src="assets/images/nyt-logo.png" alt="New York Times Logo">
+      </div>
+    </div>
+  </header>
+
+  <section class="container-fluid my-4">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link active" href="#xhr">Método XHR</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#ajax">Método Ajax</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="tab-content container-fluid">
+    <section id="xhr" class="tab-pane show fade active" role="tabpanel">
+      <div class="row">
+        <div class="col-12 hero py-3">
+          <h3 class="text-center">¿Qué te interesa hoy?</h3>
+          <form class="col-12 col-md-10 offset-md-1 mt-3">
+            <div class="form-row">
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" placeholder="e.g. Android">
+              </div>
+              <div class="col-6 offset-3 mt-3 col-md-2 offset-md-0 mt-md-0">
+                <button class="btn btn-search form-control" type="submit">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="ajax" class="tab-pane fade" role="tabpanel">
+      <div class="row">
+        <div class="col-12 hero py-3">
+          <h3 class="text-center">¿Qué te interesa hoy?</h3>
+          <form class="col-12 col-md-10 offset-md-1 mt-3">
+            <div class="form-row">
+              <div class="col-12 col-md-10">
+                <input type="text" class="form-control" placeholder="e.g. Android">
+              </div>
+              <div class="col-6 offset-3 mt-3 col-md-2 offset-md-0 mt-md-0">
+                <button class="btn btn-search form-control" type="submit">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

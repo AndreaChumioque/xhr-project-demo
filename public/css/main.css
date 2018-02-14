@@ -1,0 +1,25 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #000;
+}
+
+.hero {
+  background-color: #F0A202;
+}
+
+.hero h3 {
+  color: #fff;
+}
+
+.btn-search {
+  background-color: #000;
+  color: #fff;
+  transition: .2s;
+}
+
+.btn-search:hover {
+  background-color: #1a1a1a;
+}
