@@ -8,9 +8,11 @@ header {
 
 .hero {
   background-color: #F0A202;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-.hero h3 {
+.hero h3, .hero p {
   color: #fff;
 }
 
@@ -22,4 +24,22 @@ header {
 
 .btn-search:hover {
   background-color: #1a1a1a;
+}
+
+.articleTitle {
+  color: #CC3F0C;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.articleTitle:hover {
+  color: #CC3F0C;
+  text-decoration: underline;
+}
+
+.articleClass {
+ box-shadow: 2px 2px 5px 2px #d1d1d1;
+ padding: 1em;
+ margin-bottom: 10px;
 }

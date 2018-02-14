@@ -20,53 +20,34 @@
     </div>
   </header>
 
-  <section class="container-fluid my-4">
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item">
-        <a data-toggle="tab" class="nav-link active" href="#xhr">Método XHR</a>
-      </li>
-      <li class="nav-item">
-        <a data-toggle="tab" class="nav-link" href="#ajax">Método Ajax</a>
-      </li>
-    </ul>
+  <section class="container-fluid hero">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center">¿Qué te interesa hoy?</h3>
+        <form id="search-form" class="col-12 col-md-10 offset-md-1 mt-3">
+          <div class="form-row">
+            <div class="col-12 col-md-10 offset-md-1">
+              <input id="search-keyword" type="text" class="form-control" placeholder="e.g. Android">
+            </div>
+            <p class="col-12 text-center mt-3">Buscar con...</p>
+            <div class="col-6 offset-3 col-md-2 offset-md-4">
+              <button id="submit-xhr" class="btn btn-search form-control" type="submit">XHR</button>
+            </div>
+            <div class="col-6 offset-3 col-md-2 offset-md-0">
+              <button id="submit-fetch" class="btn btn-search form-control" type="submit">Fetch</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
 
-  <section class="tab-content container-fluid">
-    <section id="xhr" class="tab-pane show fade active" role="tabpanel">
-      <div class="row">
-        <div class="col-12 hero py-3">
-          <h3 class="text-center">¿Qué te interesa hoy?</h3>
-          <form class="col-12 col-md-10 offset-md-1 mt-3">
-            <div class="form-row">
-              <div class="col-12 col-md-10">
-                <input type="text" class="form-control" placeholder="e.g. Android">
-              </div>
-              <div class="col-6 offset-3 mt-3 col-md-2 offset-md-0 mt-md-0">
-                <button class="btn btn-search form-control" type="submit">Buscar</button>
-              </div>
-            </div>
-          </form>
-        </div>
+  <section class="container-fluid py-4">
+    <div class="row">
+      <div class="col">
+        <ul id="response-container" class="list-unstyled"></ul>
       </div>
-    </section>
-
-    <section id="ajax" class="tab-pane fade" role="tabpanel">
-      <div class="row">
-        <div class="col-12 hero py-3">
-          <h3 class="text-center">¿Qué te interesa hoy?</h3>
-          <form class="col-12 col-md-10 offset-md-1 mt-3">
-            <div class="form-row">
-              <div class="col-12 col-md-10">
-                <input type="text" class="form-control" placeholder="e.g. Android">
-              </div>
-              <div class="col-6 offset-3 mt-3 col-md-2 offset-md-0 mt-md-0">
-                <button class="btn btn-search form-control" type="submit">Buscar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+    </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
